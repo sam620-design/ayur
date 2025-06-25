@@ -1,12 +1,12 @@
 ---
 const navigation = [
-  { name: 'Home', href: '/' },
-  { name: 'Health', href: '/category/health' },
-  { name: 'Beauty', href: '/category/beauty' },
-  { name: 'Digestion', href: '/category/digestion' },
-  { name: 'Immunity', href: '/category/immunity' },
-  { name: 'Hair Care', href: '/category/hair-care' },
-  { name: 'About', href: '/about' }
+  { name: "Home", href: "/" },
+  { name: "Health", href: "/category/health" },
+  { name: "Beauty", href: "/category/beauty" },
+  { name: "Digestion", href: "/category/digestion" },
+  { name: "Immunity", href: "/category/immunity" },
+  { name: "Hair Care", href: "/category/hair-care" },
+  { name: "About", href: "/about" },
 ];
 
 const currentPath = Astro.url.pathname;
@@ -18,11 +18,12 @@ const currentPath = Astro.url.pathname;
       <!-- Logo -->
       <div class="flex items-center">
         <a href="/" class="flex items-center space-x-2">
-          <div class="bg-primary-500 text-white p-2 rounded-lg">
-            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
-            </svg>
-          </div>
+          <img
+            src="/logo.png"
+            alt="AyurCure Daily Logo"
+            class="w-10 h-10 rounded-lg"
+          />
+
           <div>
             <h1 class="text-2xl font-bold text-gray-900">AyurCure Daily</h1>
             <p class="text-sm text-gray-600">Natural Health & Remedies</p>
@@ -32,31 +33,42 @@ const currentPath = Astro.url.pathname;
 
       <!-- Desktop Navigation -->
       <nav class="hidden md:flex space-x-8">
-        {navigation.map((item) => (
-          <a
-            href={item.href}
-            class={`px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
-              currentPath === item.href || 
-              (item.href !== '/' && currentPath.startsWith(item.href))
-                ? 'bg-primary-100 text-primary-700'
-                : 'text-gray-700 hover:text-primary-600 hover:bg-gray-100'
-            }`}
-          >
-            {item.name}
-          </a>
-        ))}
+        {
+          navigation.map((item) => (
+            <a
+              href={item.href}
+              class={`px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
+                currentPath === item.href ||
+                (item.href !== "/" && currentPath.startsWith(item.href))
+                  ? "bg-primary-100 text-primary-700"
+                  : "text-gray-700 hover:text-primary-600 hover:bg-gray-100"
+              }`}
+            >
+              {item.name}
+            </a>
+          ))
+        }
       </nav>
 
       <!-- Mobile menu button -->
       <div class="md:hidden">
-        <button 
-          type="button" 
+        <button
+          type="button"
           class="mobile-menu-button inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100"
           aria-expanded="false"
         >
           <span class="sr-only">Open main menu</span>
-          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          <svg
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"></path>
           </svg>
         </button>
       </div>
@@ -65,32 +77,34 @@ const currentPath = Astro.url.pathname;
     <!-- Mobile Navigation -->
     <div class="mobile-menu hidden md:hidden pb-4">
       <div class="space-y-1">
-        {navigation.map((item) => (
-          <a
-            href={item.href}
-            class={`block px-3 py-2 rounded-md text-base font-medium ${
-              currentPath === item.href || 
-              (item.href !== '/' && currentPath.startsWith(item.href))
-                ? 'bg-primary-100 text-primary-700'
-                : 'text-gray-700 hover:text-primary-600 hover:bg-gray-100'
-            }`}
-          >
-            {item.name}
-          </a>
-        ))}
+        {
+          navigation.map((item) => (
+            <a
+              href={item.href}
+              class={`block px-3 py-2 rounded-md text-base font-medium ${
+                currentPath === item.href ||
+                (item.href !== "/" && currentPath.startsWith(item.href))
+                  ? "bg-primary-100 text-primary-700"
+                  : "text-gray-700 hover:text-primary-600 hover:bg-gray-100"
+              }`}
+            >
+              {item.name}
+            </a>
+          ))
+        }
       </div>
     </div>
   </div>
 </header>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const mobileMenuButton = document.querySelector('.mobile-menu-button');
-    const mobileMenu = document.querySelector('.mobile-menu');
-    
+  document.addEventListener("DOMContentLoaded", function () {
+    const mobileMenuButton = document.querySelector(".mobile-menu-button");
+    const mobileMenu = document.querySelector(".mobile-menu");
+
     if (mobileMenuButton && mobileMenu) {
-      mobileMenuButton.addEventListener('click', function() {
-        mobileMenu.classList.toggle('hidden');
+      mobileMenuButton.addEventListener("click", function () {
+        mobileMenu.classList.toggle("hidden");
       });
     }
   });

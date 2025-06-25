@@ -4,7 +4,10 @@ interface Props {
   description?: string;
 }
 
-const { title, description = "AyurCure Daily - प्राकृतिक स्वास्थ्य और घरेलू नुस्खों का विश्वसनीय स्रोत" } = Astro.props;
+const {
+  title,
+  description = "AyurCure Daily - प्राकृतिक स्वास्थ्य और घरेलू नुस्खों का विश्वसनीय स्रोत",
+} = Astro.props;
 ---
 
 <!doctype html>
@@ -15,12 +18,15 @@ const { title, description = "AyurCure Daily - प्राकृतिक स�
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content={description} />
-    
+
     <!-- Hindi font from Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-    
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
     <title>{title}</title>
   </head>
   <body class="bg-gray-50 font-sans">
@@ -32,8 +38,8 @@ const { title, description = "AyurCure Daily - प्राकृतिक स�
   html {
     scroll-behavior: smooth;
   }
-  
+
   body {
-    font-family: 'Inter', 'Noto Sans Devanagari', system-ui, sans-serif;
+    font-family: "Inter", "Noto Sans Devanagari", system-ui, sans-serif;
   }
 </style>
