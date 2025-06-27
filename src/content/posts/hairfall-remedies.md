@@ -2,7 +2,7 @@
 title: "बालों के झड़ने से रोकें - आयुर्वेदिक उपाय जो असर करें"
 description: "बालों का गिरना आज की आम समस्या है, लेकिन आयुर्वेद के पास इसके लिए प्राकृतिक और असरदार समाधान हैं। जानें कैसे आप बालों को मजबूत और स्वस्थ बना सकते हैं।"
 pubDate: 2025-06-27
-image: "https://images.pexels.com/photos/853427/pexels-photo-853427.jpeg"
+image: "https://images.pexels.com/photos/7148534/pexels-photo-7148534.jpeg"
 category: "hair-care"
 featured: true
 ---
