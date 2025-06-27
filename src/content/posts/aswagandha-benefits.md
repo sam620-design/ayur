@@ -2,8 +2,8 @@
 title: "अश्वगंधा के फायदे: तनाव घटाएं, ताकत बढ़ाएं"
 slug: "ashwagandha-benefits"
 description: "अश्वगंधा के अद्भुत फायदे जानिए - यह आयुर्वेदिक जड़ी-बूटी तनाव कम करने, प्रतिरक्षा बढ़ाने और ऊर्जा को मजबूत करने में सहायक है।"
-date: 2025-06-27
-category: "Health"
+pubDate: 2025-06-27
+category: "health"
 image: "https://cdn.pixabay.com/photo/2017/07/06/09/41/dried-cassia-2477483_1280.jpg"
 ---
 
