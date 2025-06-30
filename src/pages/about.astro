@@ -8,6 +8,10 @@ import Footer from "../components/Footer.astro";
   title="About - AyurCure Daily"
   description="Learn about AyurCure Daily's mission to promote natural health and wellness through authentic Ayurvedic remedies and home solutions."
 >
+  <Fragment slot="head">
+    <link rel="canonical" href="https://www.ayurcuredaily.com/about" />
+  </Fragment>
+
   <Header />
 
   <main class="py-16 bg-gray-50">
@@ -57,12 +61,10 @@ import Footer from "../components/Footer.astro";
 
       <!-- Values Section -->
       <div class="grid md:grid-cols-3 gap-8 mb-12">
-        <!-- Authenticity -->
         <div class="bg-white p-6 rounded-xl shadow-md text-center">
           <div
             class="w-16 h-16 bg-yellow-100 text-yellow-600 rounded-full flex items-center justify-center mx-auto mb-4"
           >
-            <!-- Book/Scroll Icon -->
             <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
               <path
                 d="M6 4v16a2 2 0 0 0 2 2h13v-2H8V4zM4 2a2 2 0 0 0-2 2v14h2V4h10V2H4z"
@@ -76,12 +78,10 @@ import Footer from "../components/Footer.astro";
           </p>
         </div>
 
-        <!-- Safety First -->
         <div class="bg-white p-6 rounded-xl shadow-md text-center">
           <div
             class="w-16 h-16 bg-red-100 text-red-600 rounded-full flex items-center justify-center mx-auto mb-4"
           >
-            <!-- Shield Check Icon -->
             <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
               <path
                 d="M12 1L3 5v6c0 5.25 3.66 10.22 9 11 5.34-.78 9-5.75 9-11V5l-9-4zm-1 15l-4-4 1.41-1.42L11 13.17l5.59-5.59L18 9l-7 7z"
@@ -95,12 +95,10 @@ import Footer from "../components/Footer.astro";
           </p>
         </div>
 
-        <!-- Simplicity -->
         <div class="bg-white p-6 rounded-xl shadow-md text-center">
           <div
             class="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-4"
           >
-            <!-- Leaf/Nature Icon -->
             <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
               <path
                 d="M12.88 2C10.72 2 8.43 3.13 6.73 5.13 4.5 7.82 3 11.68 3 16c0 4.42 3.58 8 8 8s8-3.58 8-8c0-4.96-2.71-10.5-6.12-14zm-.88 18c-3.31 0-6-2.69-6-6 0-3.74 1.2-7.1 3.14-9.33 1.24-1.47 2.93-2.34 4.86-2.61C15.76 5.82 17 9.03 17 12c0 3.31-2.69 6-6 6z"
@@ -121,104 +119,55 @@ import Footer from "../components/Footer.astro";
           What We Cover
         </h2>
         <div class="grid md:grid-cols-2 gap-6">
-          <div class="flex items-start space-x-4">
-            <div
-              class="w-8 h-8 bg-green-100 text-green-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1"
-            >
-              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
-                ></path>
-              </svg>
-            </div>
-            <div>
-              <h3 class="text-lg font-semibold text-gray-900 mb-2">
-                General Health
-              </h3>
-              <p class="text-gray-600">
-                Natural remedies for common health issues and preventive care
-              </p>
-            </div>
-          </div>
-
-          <div class="flex items-start space-x-4">
-            <div
-              class="w-8 h-8 bg-pink-100 text-pink-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1"
-            >
-              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
-                ></path>
-              </svg>
-            </div>
-            <div>
-              <h3 class="text-lg font-semibold text-gray-900 mb-2">
-                Natural Beauty
-              </h3>
-              <p class="text-gray-600">
-                DIY beauty treatments using natural ingredients
-              </p>
-            </div>
-          </div>
-
-          <div class="flex items-start space-x-4">
-            <div
-              class="w-8 h-8 bg-yellow-100 text-yellow-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1"
-            >
-              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
-                ></path>
-              </svg>
-            </div>
-            <div>
-              <h3 class="text-lg font-semibold text-gray-900 mb-2">
-                Digestive Health
-              </h3>
-              <p class="text-gray-600">
-                Solutions for digestive issues and gut health improvement
-              </p>
-            </div>
-          </div>
-
-          <div class="flex items-start space-x-4">
-            <div
-              class="w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1"
-            >
-              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
-                ></path>
-              </svg>
-            </div>
-            <div>
-              <h3 class="text-lg font-semibold text-gray-900 mb-2">
-                Immunity Boosting
-              </h3>
-              <p class="text-gray-600">
-                Natural ways to strengthen your immune system
-              </p>
-            </div>
-          </div>
-
-          <div class="flex items-start space-x-4">
-            <div
-              class="w-8 h-8 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1"
-            >
-              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
-                ></path>
-              </svg>
-            </div>
-            <div>
-              <h3 class="text-lg font-semibold text-gray-900 mb-2">
-                Hair Care
-              </h3>
-              <p class="text-gray-600">
-                Natural solutions for healthy, beautiful hair
-              </p>
-            </div>
-          </div>
+          {
+            [
+              [
+                "General Health",
+                "Natural remedies for common health issues and preventive care",
+                "green",
+              ],
+              [
+                "Natural Beauty",
+                "DIY beauty treatments using natural ingredients",
+                "pink",
+              ],
+              [
+                "Digestive Health",
+                "Solutions for digestive issues and gut health improvement",
+                "yellow",
+              ],
+              [
+                "Immunity Boosting",
+                "Natural ways to strengthen your immune system",
+                "blue",
+              ],
+              [
+                "Hair Care",
+                "Natural solutions for healthy, beautiful hair",
+                "purple",
+              ],
+            ].map(([title, desc, color]) => (
+              <div class="flex items-start space-x-4">
+                <div
+                  class={`w-8 h-8 bg-${color}-100 text-${color}-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1`}
+                >
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-lg font-semibold text-gray-900 mb-2">
+                    {title}
+                  </h3>
+                  <p class="text-gray-600">{desc}</p>
+                </div>
+              </div>
+            ))
+          }
         </div>
       </div>
 
-      <!-- Disclaimer Section -->
+      <!-- Disclaimer -->
       <div class="bg-yellow-50 border-l-4 border-yellow-400 p-6 rounded-r-xl">
         <div class="flex">
           <div class="flex-shrink-0">
@@ -237,15 +186,13 @@ import Footer from "../components/Footer.astro";
             <h3 class="text-sm font-medium text-yellow-800">
               Important Disclaimer
             </h3>
-            <div class="mt-2 text-sm text-yellow-700">
-              <p>
-                The information provided on AyurCure Daily is for educational
-                purposes only and should not replace professional medical
-                advice. Always consult with a qualified healthcare provider
-                before starting any new treatment or making changes to your
-                current healthcare routine.
-              </p>
-            </div>
+            <p class="mt-2 text-sm text-yellow-700">
+              The information provided on AyurCure Daily is for educational
+              purposes only and should not replace professional medical advice.
+              Always consult with a qualified healthcare provider before
+              starting any new treatment or making changes to your healthcare
+              routine.
+            </p>
           </div>
         </div>
       </div>
