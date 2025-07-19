@@ -4,7 +4,7 @@ slug: "dandruff-treatment"
 description: "जानिए डैंड्रफ के लिए आसान और असरदार घरेलू नुस्खे जो आपके बालों को रूसी से मुक्त और स्वस्थ बनाते हैं।"
 pubDate: 2025-07-17
 category: "hair-care"
-image: "/images/dandruff-home-remedy.jpg"
+image: "https://www.shutterstock.com/image-photo/woman-dandruff-her-dark-hair-260nw-1768543955.jpg"
 tags: ["डैंड्रफ", "बालों की देखभाल", "घरेलू उपाय", "स्कैल्प केयर"]
 ---
 
